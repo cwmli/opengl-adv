@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>3D Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveHandler.cpp">
+      <Filter>3D Camera</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>3D Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveHandler.h">
+      <Filter>3D Camera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{fe67cbd4-de76-471b-9be6-f1d2cea43da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{0325681a-8d3a-4da0-be41-9d0dceb6cbd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3D Camera">
+      <UniqueIdentifier>{d3f2f48c-f36c-4718-9d46-481727d14df2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿Build started 13/12/2014 7:10:35 PM.
+     1>Project "C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\CameraTest\CameraTest.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Program Files\Microsoft Visual Studio 2013\VC\bin\CL.exe /c /I"E:\SDL\SDL2-2.0.3\include" /IE:\GLM /I"E:\GLEW\glew-1.11.0\include\GL" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Camera.cpp
+         Camera.cpp
+     1>c:\users\calvin\documents\visual studio 2013\projects\cameratest\cameratest\camera.cpp(24): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\calvin\documents\visual studio 2013\projects\cameratest\cameratest\camera.cpp(25): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+         E:\Program Files\Microsoft Visual Studio 2013\VC\bin\CL.exe /c /I"E:\SDL\SDL2-2.0.3\include" /IE:\GLM /I"E:\GLEW\glew-1.11.0\include\GL" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MoveHandler.cpp main.cpp Shader.cpp
+         Shader.cpp
+         main.cpp
+     1>c:\users\calvin\documents\visual studio 2013\projects\cameratest\cameratest\main.cpp(134): warning C4244: 'initializing' : conversion from 'Uint32' to 'GLfloat', possible loss of data
+         GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         GLM: perspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         MoveHandler.cpp
+         Generating Code...
+       Link:
+         E:\Program Files\Microsoft Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\Debug\DireWaters.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\SDL\SDL2-2.0.3\lib\x86" /LIBPATH:"E:\GLEW\glew-1.11.0\lib\Release\Win32" opengl32.lib SDL2.lib SDL2main.lib glew32s.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:"/NODEFAULTLIB:[msvcrt.lib]" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\Debug\DireWaters.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\Debug\DireWaters.lib" /MACHINE:X86 Debug\Camera.obj
+         Debug\MoveHandler.obj
+         Debug\main.obj
+         Debug\Shader.obj
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewAttachShader imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewCompileShader imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewCreateProgram imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewCreateShader imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewDeleteShader imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewDetachShader imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewGetProgramInfoLog imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewGetProgramiv imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewGetShaderInfoLog imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewGetShaderiv imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewLinkProgram imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewShaderSource imported
+     1>Shader.obj : warning LNK4049: locally defined symbol ___glewUseProgram imported
+     1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\Debug\vc120.pdb'; linking object as if no debug info
+         CameraTest.vcxproj -> C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\Debug\DireWaters.exe
+     1>Done Building Project "C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\CameraTest\CameraTest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.63
