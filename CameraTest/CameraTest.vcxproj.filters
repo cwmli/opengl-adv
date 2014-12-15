@@ -7,22 +7,28 @@
     <ClCompile Include="main.cpp">
       <Filter>Class</Filter>
     </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>3D Camera</Filter>
+    <ClCompile Include="fpsCamera.cpp">
+      <Filter>FPS CAMERA</Filter>
     </ClCompile>
     <ClCompile Include="MoveHandler.cpp">
-      <Filter>3D Camera</Filter>
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>2d Camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
-      <Filter>3D Camera</Filter>
+    <ClInclude Include="fpsCamera.h">
+      <Filter>FPS CAMERA</Filter>
     </ClInclude>
     <ClInclude Include="MoveHandler.h">
-      <Filter>3D Camera</Filter>
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>2d Camera</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -32,8 +38,11 @@
     <Filter Include="Class">
       <UniqueIdentifier>{0325681a-8d3a-4da0-be41-9d0dceb6cbd0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="3D Camera">
+    <Filter Include="FPS CAMERA">
       <UniqueIdentifier>{d3f2f48c-f36c-4718-9d46-481727d14df2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2d Camera">
+      <UniqueIdentifier>{261fbe6d-c522-4f34-9f99-1c042b25fe4f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
