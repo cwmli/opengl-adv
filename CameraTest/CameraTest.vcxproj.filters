@@ -14,7 +14,13 @@
       <Filter>Class</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
-      <Filter>2d Camera</Filter>
+      <Filter>2D Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="typePlayer.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Class</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -28,7 +34,13 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>2d Camera</Filter>
+      <Filter>2D Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="typePlayer.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -41,8 +53,11 @@
     <Filter Include="FPS CAMERA">
       <UniqueIdentifier>{d3f2f48c-f36c-4718-9d46-481727d14df2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2d Camera">
+    <Filter Include="2D Camera">
       <UniqueIdentifier>{261fbe6d-c522-4f34-9f99-1c042b25fe4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{3251a725-dc51-4f81-bc95-de10363d846a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

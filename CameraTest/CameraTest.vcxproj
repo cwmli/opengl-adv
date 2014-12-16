@@ -94,11 +94,15 @@
     <ClCompile Include="MoveHandler.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="typePlayer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="MoveHandler.h" />
     <ClInclude Include="fpsCamera.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="typePlayer.h" />
     <ClInclude Include="Shader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
