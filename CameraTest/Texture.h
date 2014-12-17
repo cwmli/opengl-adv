@@ -2,19 +2,17 @@
 #define TEXTURE_H
 
 #include <glew.h>
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <SOIL.h>
 
 class Texture{
 public:
-	GLuint textureSource;
+	GLuint glTexture;
+	int srctexture_Height, srctexture_Width;
+	
 	Texture(const GLchar*);
 private:
-	GetTextureSource
+	void genTexture(const GLchar*);
+	void applyTexture();
 };
 
 #endif
