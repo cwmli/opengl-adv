@@ -13,6 +13,6 @@ void Texture::genTexture(const GLchar* filePath){
 	glGenTextures(1, &sourceTexture);
 	glBindTexture(GL_TEXTURE_2D, sourceTexture);
 	//set texture properties
-	gl
+	glTexImage2D(sourceTexture,)
 }
 
