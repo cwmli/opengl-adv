@@ -3,10 +3,12 @@
 
 #include <glew.h>
 #include <SOIL.h>
+#include <SDL_opengl.h>
+#include <vector>
 
 class Texture{
 public:
-	GLuint glTexture;
+	std::vector<GLuint> glTexture;
 	int srctexture_Height, srctexture_Width;
 	
 	Texture(const GLchar*);

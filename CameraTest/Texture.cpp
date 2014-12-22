@@ -14,9 +14,11 @@ void Texture::genTexture(const GLchar* filePath){
 	glGenTextures(1, &sourceTexture);
 	glBindTexture(GL_TEXTURE_2D, sourceTexture);
 	//set texture properties
-	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, srctexture_width, srctexture_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, sourceImage );
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, srctexture_Width, srctexture_Height, 0, GL_RGBA, GL_UNSIGNED_BYTE, sourceImage );
+	//set hard scale
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glGenerateMipmap(GL_TEXTURE_2D);
 	//unbind the texture
 	glBindTexture(GL_TEXTURE_2D, NULL);
 	//clear the image data

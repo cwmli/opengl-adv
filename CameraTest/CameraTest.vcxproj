@@ -54,13 +54,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>E:\SDL\SDL2-2.0.3\include;E:\GLM;E:\GLEW\glew-1.11.0\include\GL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\SDL\SDL2-2.0.3\include;E:\GLM;E:\GLEW\glew-1.11.0\include\GL;E:\SOIL\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;SDL2.lib;SDL2main.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>E:\SDL\SDL2-2.0.3\lib\x86;E:\GLEW\glew-1.11.0\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;SDL2main.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\SDL\SDL2-2.0.3\lib\x86;E:\GLEW\glew-1.11.0\lib\Release\Win32;E:\SOIL\lib</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:[msvcrt.lib];%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -74,15 +74,15 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>E:\SDL\SDL2-2.0.3\include;E:\GLM;E:\GLEW\glew-1.11.0\include\GL</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\SDL\SDL2-2.0.3\include;E:\GLM;E:\GLEW\glew-1.11.0\include\GL;E:\SOIL\src</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>opengl32.lib;SDL2.lib;SDL2main.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>E:\SDL\SDL2-2.0.3\lib\x86;E:\GLM\glm;E:\GLEW\glew-1.11.0\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;SDL2main.lib;glew32s.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\SDL\SDL2-2.0.3\lib\x86;E:\GLM\glm;E:\GLEW\glew-1.11.0\lib\Release\Win32;E:\SOIL\lib</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>/NODEFAULTLIB:MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
