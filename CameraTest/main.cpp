@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	glewExperimental = GL_TRUE;
 	if (glewInit() < 0)
 		printf("ERROR::Unable to initialize GLEW\n");
-	Shader gShader("content/default.vs","content/default.frag");
+	Shader gShader();
 
 	while (true)
 	{

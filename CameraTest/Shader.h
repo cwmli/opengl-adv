@@ -15,15 +15,12 @@ public:
 	GLuint theProgram;
 	std::vector<GLuint> shaderList;
 	//Shader program constructor
-	Shader(const GLchar*, //const GLchar*
-		const GLchar*);
-
+	Shader();
+	void Use();
+private:
 	std::string GetShaderSrc(const GLchar* filePath);
-
 	GLuint CreateShader(GLenum, const GLchar*);
-
 	GLuint CreateProgram(const std::vector<GLuint> &);
 
-	void Use();
 };
 #endif

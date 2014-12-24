@@ -1,11 +1,10 @@
 #include "Shader.h"
 
-Shader::Shader(const GLchar* vertexPath, //const GLchar* geometryPath, 
-	const GLchar* fragmentPath)
+Shader::Shader()
 {
-	this->shaderList.push_back(CreateShader(GL_VERTEX_SHADER, vertexPath));
+	this->shaderList.push_back(CreateShader(GL_VERTEX_SHADER, "content/glsl/default.vs"));
 	//shaderList.push_back(CreateShader(GL_GEOMETRY_SHADER, geometryPath));
-	this->shaderList.push_back(CreateShader(GL_FRAGMENT_SHADER, fragmentPath));
+	this->shaderList.push_back(CreateShader(GL_FRAGMENT_SHADER, "content/glsl/default.frag"));
 
 	this->theProgram = CreateProgram(this->shaderList);
 	//remove shaders 
