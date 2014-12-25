@@ -1,19 +1,11 @@
-﻿Build started 15/12/2014 6:46:01 PM.
+﻿Build started 25/12/2014 12:28:47 PM.
      1>Project "C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\CameraTest\CameraTest.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         E:\Program Files\Microsoft Visual Studio 2013\VC\bin\CL.exe /c /I"E:\SDL\SDL2-2.0.3\include" /IE:\GLM /I"E:\GLEW\glew-1.11.0\include\GL" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Camera.cpp MoveHandler.cpp main.cpp Shader.cpp typePlayer.cpp
-         typePlayer.cpp
-         Shader.cpp
-         main.cpp
-     1>c:\users\calvin\documents\visual studio 2013\projects\cameratest\opengl-adv\cameratest\main.cpp(125): warning C4244: 'initializing' : conversion from 'Uint32' to 'GLfloat', possible loss of data
-         GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
-         MoveHandler.cpp
-         Camera.cpp
-         Generating Code...
-     1>c:\users\calvin\documents\visual studio 2013\projects\cameratest\opengl-adv\cameratest\camera.cpp(31): error C4716: 'twodcam::getViewMatrix' : must return a value
-     1>c:\users\calvin\documents\visual studio 2013\projects\cameratest\opengl-adv\cameratest\typeplayer.cpp(11): error C4716: 'typePlayer::procStatus' : must return a value
+         E:\Program Files\Microsoft Visual Studio 2013\VC\bin\CL.exe /c /I"E:\SDL\SDL2-2.0.3\include" /IE:\GLM /I"E:\GLEW\glew-1.11.0\include\GL" /IE:\SOIL\src /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Texture.cpp
+         Texture.cpp
+     1>c:\users\calvin\documents\visual studio 2013\projects\cameratest\opengl-adv\cameratest\texture.cpp(66): error C4716: 'Texture::getTexName' : must return a value
      1>Done Building Project "C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\CameraTest\CameraTest.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:04.39
+Time Elapsed 00:00:00.80

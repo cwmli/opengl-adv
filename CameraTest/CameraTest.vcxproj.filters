@@ -42,6 +42,9 @@
     <ClInclude Include="Texture.h">
       <Filter>Header</Filter>
     </ClInclude>
+    <ClInclude Include="TextureID_map.h">
+      <Filter>Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header">

@@ -25,11 +25,6 @@ void twodcam::focusoncenterCamera(GLfloat entx, GLfloat entz){
 	cameraPos.z += zoffset;
 };
 
-glm::mat4 twodcam::getViewMatrix(){
-	//keep camera locked on player
-	//return (glm::lookAt(cameraPos, player, cameraUp));
-};
-
 void twodcam::updateCamVectors(){
 
 };

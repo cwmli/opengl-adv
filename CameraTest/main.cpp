@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	glewExperimental = GL_TRUE;
 	if (glewInit() < 0)
 		printf("ERROR::Unable to initialize GLEW\n");
-	Shader gShader();
+	Shader gShader;
 
 	while (true)
 	{
@@ -57,8 +57,6 @@ int main(int argc, char *argv[])
 		}
 
 		//------------------------------------------------------------------------------------------//
-
-		GLfloat currentFrame = SDL_GetTicks();
 
 		glClearColor(0.7f, 0.7f, 0.7f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

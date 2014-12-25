@@ -10,17 +10,21 @@ class Texture{
 public:
 	Texture(const GLchar*);
 private:
-	std::vector<GLchar*> texture_files;
+	//std::vector<std::string, GLint> texture_ids;
+	//std::vector<std::string, int> textureid_layer;
+	std::vector<std::string> texture_filenames;
+	std::string texturePath;
+
 	void genGLTexture(GLuint, std::string);
-	//Return a reference of the texture array  given id
-	GLuint getRef();
-	//Unload and remove a specific texture in a texture list
+	GLuint getRefbyID();
+
 	void clearTextures();
-	//Unload and remove all current textures in all texture lists
 	void clearAllTextures();
-	GLchar* getfilePath(int&, int&);
+
+	//ACCESSORS
+	const char* getfilePath(int&);
 	std::string getdirPath(std::string);
-	//Returns the number of files in the directory
+	std::string getTexName(int&);
 	void getNFiles(std::string, std::string);
 };
 
