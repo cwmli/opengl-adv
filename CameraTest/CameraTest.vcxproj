@@ -54,7 +54,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>E:\SDL\SDL2-2.0.3\include;E:\GLM;E:\GLEW\glew-1.11.0\include\GL;E:\SOIL\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\SDL\SDL2-2.0.3\include;E:\GLM;E:\GLEW\glew-1.11.0\include\GL;E:\SOIL\src;E:\DIRENT\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +74,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>E:\SDL\SDL2-2.0.3\include;E:\GLM;E:\GLEW\glew-1.11.0\include\GL;E:\SOIL\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\SDL\SDL2-2.0.3\include;E:\GLM;E:\GLEW\glew-1.11.0\include\GL;E:\SOIL\src;E:\DIRENT\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -88,23 +88,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="entityHandler.cpp" />
     <ClCompile Include="fpsCamera.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="MoveHandler.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="typePlayer.cpp" />
+    <ClCompile Include="player_entity.cpp" />
+    <ClCompile Include="shaderInit.cpp" />
+    <ClCompile Include="textureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="base_Entity.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="entityHandler.h" />
     <ClInclude Include="MoveHandler.h" />
     <ClInclude Include="fpsCamera.h" />
-    <ClInclude Include="Texture.h" />
-    <ClInclude Include="TextureID_map.h" />
-    <ClInclude Include="typePlayer.h" />
-    <ClInclude Include="Shader.h" />
+    <ClInclude Include="player_entity.h" />
+    <ClInclude Include="textureManager.h" />
+    <ClInclude Include="shaderInit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

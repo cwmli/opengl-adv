@@ -11,9 +11,10 @@
 #include <glm/gtc/type_ptr.hpp>
 
 //function prototypes
-#include "Shader.h"
+#include "shaderInit.h"
 #include "MoveHandler.h"
 #include "Camera.h"
+#include "textureManager.h"
 MoveHandler keyHandler;
 void sdlerr(const char* msg)
 {
@@ -44,7 +45,7 @@ int main(int argc, char *argv[])
 	glewExperimental = GL_TRUE;
 	if (glewInit() < 0)
 		printf("ERROR::Unable to initialize GLEW\n");
-	Shader gShader;
+	shaderInit gShader;
 
 	while (true)
 	{
@@ -52,7 +53,6 @@ int main(int argc, char *argv[])
 		{
 			if (windowEvent.type == SDL_QUIT) break;
 			keyHandler.handleKeyboardEvent(windowEvent);//report the peripheral event
-			keyHandler.thiscall++;
 			//do if sdl_pollevent for mouse events ONLY
 		}
 

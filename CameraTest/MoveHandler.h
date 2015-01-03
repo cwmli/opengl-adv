@@ -12,7 +12,6 @@ using namespace std;
 class MoveHandler{
 public:
 	const Uint8 *keystateCurrent;
-	float lastcall = 0, thiscall = 0;
 	int mPosX, mPosY;
 	bool keys[256]; //keybuffer
 	void handleKeyboardEvent(SDL_Event);

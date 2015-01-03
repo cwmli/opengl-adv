@@ -1,11 +1,19 @@
-﻿Build started 25/12/2014 12:28:47 PM.
+﻿Build started 01/01/2015 6:01:57 PM.
      1>Project "C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\CameraTest\CameraTest.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         E:\Program Files\Microsoft Visual Studio 2013\VC\bin\CL.exe /c /I"E:\SDL\SDL2-2.0.3\include" /IE:\GLM /I"E:\GLEW\glew-1.11.0\include\GL" /IE:\SOIL\src /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Texture.cpp
+         E:\Program Files\Microsoft Visual Studio 2013\VC\bin\CL.exe /c /I"E:\SDL\SDL2-2.0.3\include" /IE:\GLM /I"E:\GLEW\glew-1.11.0\include\GL" /IE:\SOIL\src /IE:\DIRENT\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Texture.cpp
          Texture.cpp
-     1>c:\users\calvin\documents\visual studio 2013\projects\cameratest\opengl-adv\cameratest\texture.cpp(66): error C4716: 'Texture::getTexName' : must return a value
-     1>Done Building Project "C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\CameraTest\CameraTest.vcxproj" (Build target(s)) -- FAILED.
+       Link:
+         E:\Program Files\Microsoft Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\Debug\DireWaters.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\SDL\SDL2-2.0.3\lib\x86" /LIBPATH:"E:\GLEW\glew-1.11.0\lib\Release\Win32" /LIBPATH:E:\SOIL\lib opengl32.lib SDL2.lib SDL2main.lib glew32s.lib SOIL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:"/NODEFAULTLIB:[msvcrt.lib]" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\Debug\DireWaters.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\Debug\DireWaters.lib" /MACHINE:X86 Debug\Camera.obj
+         Debug\MoveHandler.obj
+         Debug\main.obj
+         Debug\player_entity.obj
+         Debug\Shader.obj
+         Debug\Texture.obj
+         Debug\fpsCamera.obj
+         CameraTest.vcxproj -> C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\Debug\DireWaters.exe
+     1>Done Building Project "C:\Users\Calvin\Documents\Visual Studio 2013\Projects\CameraTest\opengl-adv\CameraTest\CameraTest.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.80
+Time Elapsed 00:00:01.15

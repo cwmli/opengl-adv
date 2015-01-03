@@ -12,8 +12,6 @@ void MoveHandler::handleKeyboardEvent(SDL_Event event){
 			break;
 		case SDL_MOUSEMOTION:
 			SDL_GetRelativeMouseState(&mPosX, &mPosY);
-			printf("Sent out mouse position at: %d, %d :::delay: %f\n", mPosX, mPosY, thiscall - lastcall);
-			lastcall = thiscall;
 			break;
 		case SDL_MOUSEWHEEL:
 			//send mousewheel data to 2dcamera to process zoom
