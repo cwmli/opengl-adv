@@ -14,7 +14,6 @@
 #include "shaderInit.h"
 #include "MoveHandler.h"
 #include "Camera.h"
-#include "textureManager.h"
 MoveHandler keyHandler;
 void sdlerr(const char* msg)
 {

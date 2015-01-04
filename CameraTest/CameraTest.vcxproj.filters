@@ -7,9 +7,6 @@
     <ClCompile Include="fpsCamera.cpp">
       <Filter>FPS CAMERA</Filter>
     </ClCompile>
-    <ClCompile Include="player_entity.cpp">
-      <Filter>engine</Filter>
-    </ClCompile>
     <ClCompile Include="MoveHandler.cpp">
       <Filter>engine</Filter>
     </ClCompile>
@@ -30,12 +27,6 @@
     <ClInclude Include="fpsCamera.h">
       <Filter>FPS CAMERA</Filter>
     </ClInclude>
-    <ClInclude Include="base_Entity.h">
-      <Filter>engine</Filter>
-    </ClInclude>
-    <ClInclude Include="player_entity.h">
-      <Filter>engine</Filter>
-    </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>engine</Filter>
     </ClInclude>
@@ -49,6 +40,9 @@
       <Filter>engine</Filter>
     </ClInclude>
     <ClInclude Include="textureManager.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
       <Filter>engine</Filter>
     </ClInclude>
   </ItemGroup>

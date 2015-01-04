@@ -94,17 +94,15 @@
     </ClCompile>
     <ClCompile Include="MoveHandler.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="player_entity.cpp" />
     <ClCompile Include="shaderInit.cpp" />
     <ClCompile Include="textureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="base_Entity.h" />
+    <ClInclude Include="entity.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="entityHandler.h" />
     <ClInclude Include="MoveHandler.h" />
     <ClInclude Include="fpsCamera.h" />
-    <ClInclude Include="player_entity.h" />
     <ClInclude Include="textureManager.h" />
     <ClInclude Include="shaderInit.h" />
   </ItemGroup>
