@@ -24,10 +24,14 @@ public:
 		int entityHP, entityMP, entitySPD, entityDMG, entityDEF, entityStatus;
 		int entityAGR;
 	};
+	class base_ent:entbase{
+		void updatestats();
+	}
 private:
 	class player:entbase{
 		player();//initializer
 		//special functions
+		void 
 	};
 };
 #endif
