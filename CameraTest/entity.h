@@ -10,6 +10,24 @@
 #include <vector>
 
 class entity{
-	int testvar;
+public:
+	struct entbase{
+		GLuint* texID = &ogl_ID;
+		int* texDepth = &tDepth;
+		//quad creation purposes
+	private:
+		GLint quadHeight, quadWidth;
+		GLuint ogl_ID;
+		int tDepth;
+		glm::vec2 entityPOS;
+		//basic elements
+		int entityHP, entityMP, entitySPD, entityDMG, entityDEF, entityStatus;
+		int entityAGR;
+	};
+private:
+	class player:entbase{
+		player();//initializer
+		//special functions
+	};
 };
 #endif
