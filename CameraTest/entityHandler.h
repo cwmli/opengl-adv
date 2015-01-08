@@ -18,8 +18,7 @@ private:
 	void getQuadDimensions(std::string, int*, int*);
 	/*Updates quad position based on input from user*/
 	void updateQuadData(std::string, glm::vec2&, int&, int&);
-	/*Updates the variables from base_entity*/
-	void updateEntity(std::string, glm::vec2*);
+
 	void doAnimation(); 
 	void calcDEFnDMG();
 	void checkStatus();

@@ -9,24 +9,26 @@
 #include <map>
 #include <vector>
 
-class entity{
-public:
-	struct entbase{
-		GLuint* texID = &ogl_ID;
-		int* texDepth = &tDepth;
-		//quad creation purposes
-	private:
-		GLint quadHeight, quadWidth;
-		GLuint ogl_ID;
-		int tDepth;
-		glm::vec2 entityPOS;
+#include "textureManager.h"
+
+namespace entity{
+	void process_entity_call();
+
+	struct entbase{		
 		//basic elements
 		int entityHP, entityMP, entitySPD, entityDMG, entityDEF, entityStatus;
 		int entityAGR;
+		static GLint quadHeight, quadWidth;
+		GLuint* ogl_ID;
+		int tDepth;
+		glm::vec2 entityPOS;
+
 	};
-private:
 	class player:entbase{
+	public:
 		player();//initializer
+		void playerUpdate();
+	private:
 		//special functions
 	};
 };

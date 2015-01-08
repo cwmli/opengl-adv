@@ -22,6 +22,9 @@
     <ClCompile Include="entityHandler.cpp">
       <Filter>engine</Filter>
     </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fpsCamera.h">

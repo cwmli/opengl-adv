@@ -1,7 +1,7 @@
 #include "textureManager.h"
 
 namespace textureManager{
-	std::map<std::string, GLuint> texture_catg;
+	std::map<std::string, GLuint*> texture_catg;
 	std::map<std::string, int> textureid_layer;
 	std::map<std::string, std::tuple<int, int>> textureid_wh;
 	std::vector<std::string> texture_filenames;
@@ -44,21 +44,21 @@ namespace textureManager{
 			srctexture_Height = 0;
 			srctexture_Width = 0;
 		}
-		texture_catg[c_dir] = sourceTexture;
+		texture_catg[c_dir] = &sourceTexture;
 		//finished iterating through list, dispose data and reset
 		texture_filenames.clear();
 		cLayer = 0;
 	}
 
-	void textureManager::getRefbyID(std::string category, std::string texName, GLuint* glID, int* lDepth){
-		*glID = texture_catg[category];
-		*lDepth = textureid_layer[texName];
+	void textureManager::getRefbyID(std::string category, std::string texName, GLuint* glID, int lDepth){
+		glID = texture_catg[category];
+		lDepth = textureid_layer[texName];
 	}
 
 	void textureManager::clearTextureCatg(std::string catgName){
 		texture_catg.erase(catgName);
 		textureid_layer.erase(catgName);
-		glDeleteTextures(1, &texture_catg[catgName]);
+		glDeleteTextures(1, texture_catg[catgName]);
 	}
 
 	void textureManager::clearAllTextures(){
