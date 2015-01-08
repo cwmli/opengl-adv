@@ -13,6 +13,7 @@
 
 namespace entity{
 	void process_entity_call();
+	void load_from_db();
 
 	struct entbase{		
 		//basic elements
