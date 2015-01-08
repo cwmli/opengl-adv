@@ -22,9 +22,9 @@ namespace entity{
 		GLuint* ogl_ID;
 		int tDepth;
 		glm::vec2 entityPOS;
-
 	};
-	class player:entbase{
+
+class player:entbase{
 	public:
 		player();//initializer
 		void playerUpdate();
