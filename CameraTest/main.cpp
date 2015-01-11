@@ -13,6 +13,7 @@
 //function prototypes
 #include "shaderInit.h"
 #include "MoveHandler.h"
+#include "textureManager.h"
 #include "Camera.h"
 MoveHandler keyHandler;
 void sdlerr(const char* msg)
@@ -45,6 +46,8 @@ int main(int argc, char *argv[])
 	if (glewInit() < 0)
 		printf("ERROR::Unable to initialize GLEW\n");
 	shaderInit gShader;
+
+	textureManager::genGLTexture("entities", "player")
 
 	while (true)
 	{

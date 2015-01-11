@@ -14,7 +14,7 @@ namespace textureManager{
 	/*----------------
 	 *-Texture loading
 	------------------*/
-	extern std::map<std::string, GLuint*> texture_catg;
+	extern std::map<std::string, GLuint> texture_catg;
 	extern std::map<std::string, int> textureid_layer;
 	extern std::map<std::string, std::tuple<int, int>> textureid_wh;
 	extern std::vector<std::string> texture_filenames;
@@ -24,7 +24,7 @@ namespace textureManager{
 	/*category, texturename, glID, depth*/
 	void getRefbyID(std::string, std::string, GLuint*, int);
 	/*generate a gl texture given the gltexture and the directory*/
-	void genGLTexture(GLuint, std::string);
+	void genGLTexture(std::string, std::string);
 
 	void clearTextureCatg(std::string);
 	void clearAllTextures();
