@@ -1,7 +1,7 @@
 #include "textureManager.h"
 
 namespace textureManager{
-	std::map<std::string, GLuint*> texture_catg;
+	std::map<std::string, GLuint> texture_catg;
 	std::map<std::string, int> textureid_layer;
 	std::map<std::string, std::tuple<int, int>> textureid_wh;
 	std::vector<std::string> texture_filenames;
@@ -10,9 +10,10 @@ namespace textureManager{
 	/*Generate the opengl texture with an ID.*/
 	/*-sourceTexture specifies the opengl texture to modify*/
 	/*-c_dir specifies the current directory name of texture files(category) */
-	void textureManager::genGLTexture(GLuint sourceTexture, std::string c_dir){
+	void textureManager::genGLTexture(std::string c_dir, std::string subfolder){
+		GLuint sourceTexture;
 		//populate our texture_filenames list
-		texturePath = "content/data/%c/", c_dir;
+		texturePath = "content/data/%c/%c", c_dir, subfolder;
 		getNFiles(getdirPath(c_dir), "png");//only accepting png image format
 		//restrict mipmap level to 1, we do not need mipmaps
 		GLsizei mipLevel = 1;
@@ -44,21 +45,21 @@ namespace textureManager{
 			srctexture_Height = 0;
 			srctexture_Width = 0;
 		}
-		texture_catg[c_dir] = &sourceTexture;
+		texture_catg[c_dir] = sourceTexture;
 		//finished iterating through list, dispose data and reset
 		texture_filenames.clear();
 		cLayer = 0;
 	}
 
 	void textureManager::getRefbyID(std::string category, std::string texName, GLuint* glID, int lDepth){
-		glID = texture_catg[category];
+		glID = &texture_catg[category];
 		lDepth = textureid_layer[texName];
 	}
 
 	void textureManager::clearTextureCatg(std::string catgName){
 		texture_catg.erase(catgName);
 		textureid_layer.erase(catgName);
-		glDeleteTextures(1, texture_catg[catgName]);
+		glDeleteTextures(1, &texture_catg[catgName]);
 	}
 
 	void textureManager::clearAllTextures(){
@@ -88,19 +89,17 @@ namespace textureManager{
 		DIR* dir;
 		struct dirent *ent;
 		if ((dir = opendir(dirPath)) != NULL){
-			printf("[INFO]Opened directory: \"%s\"\n", dirPath);
 			while ((ent = readdir(dir)) != NULL){
 				std::string tempFn = ent->d_name;
 				if (tempFn.substr(tempFn.find_last_of(".") + 1) == fileFormat){
 					texture_filenames.push_back(ent->d_name);//store just filename ignore extension
-					printf("[INFO]Loaded file: %s\n", ent->d_name);
+					printf("INFO::Loaded file: %s\n", ent->d_name);
 				}
 			}
 			closedir(dir);
-			printf("[INFO]All files loaded from \"%s\" matching %s format\n", dirPath, fileFormat);
 		}
 		else{
-			printf("[ERROR]Local directory: \"%s\" does not exist or no files detected.\n", dirPath);
+			printf("ERROR::Local directory: \"%s\" does not exist or no files detected.\n", dirPath);
 		}
 	}
 }

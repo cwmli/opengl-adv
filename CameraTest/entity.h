@@ -13,7 +13,7 @@
 
 namespace entity{
 	void process_entity_call();
-	void load_from_db();
+	void load_entity_db();
 
 	struct entbase{		
 		//basic elements
@@ -27,7 +27,8 @@ namespace entity{
 
 class player:entbase{
 	public:
-		player();//initializer
+		player();
+		player(int, int, int, int, int, int, glm::vec2);//initializer
 		void playerUpdate();
 	private:
 		//special functions
