@@ -19,10 +19,10 @@
     <ClCompile Include="textureManager.cpp">
       <Filter>engine</Filter>
     </ClCompile>
-    <ClCompile Include="entityHandler.cpp">
+    <ClCompile Include="entity.cpp">
       <Filter>engine</Filter>
     </ClCompile>
-    <ClCompile Include="entity.cpp">
+    <ClCompile Include="engineInit.cpp">
       <Filter>engine</Filter>
     </ClCompile>
   </ItemGroup>

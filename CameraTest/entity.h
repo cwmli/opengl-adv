@@ -11,13 +11,30 @@
 
 #include "textureManager.h"
 
-namespace entity{
-	void process_entity_call();
-	void load_entity_db();
+class entity{
+	std::map<entity, float*> plrVertexData;
+	std::map<entity, int*> plrIndexData;
+
+	void process_entity_call(std::string);
+
+	enum Status{
+		teststatus1,
+		teststatus2,
+		teststatus3
+	};
+
+	void getQuadDimensions(std::string, int*, int*);
+	/*Updates quad position based on input from user*/
+	void updateQuadData(entity, glm::vec2, int, int);
+
+	void calcDEFnDMG();
+	void checkStatus();
+
 
 	struct entbase{		
 		//basic elements
-		int entityHP, entityMP, entitySPD, entityDMG, entityDEF, entityStatus;
+		int entityHP, entityMP, entitySPD, entityDMG, entityDEF;
+		Status entityStatus;
 		int entityAGR;
 		static GLint quadHeight, quadWidth;
 		GLuint* ogl_ID;
@@ -28,10 +45,14 @@ namespace entity{
 class player:entbase{
 	public:
 		player();
-		player(int, int, int, int, int, int, glm::vec2);//initializer
+		player(int, int, int, int, int, Status, glm::vec2);//initializer
 		void playerUpdate();
 	private:
 		//special functions
 	};
+struct entity_types{
+	entity::player plr;
+};
+std::map<std::string, entity_types> Entities;
 };
 #endif
