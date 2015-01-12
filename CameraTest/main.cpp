@@ -11,9 +11,9 @@
 #include <glm/gtc/type_ptr.hpp>
 
 //function prototypes
-#include "shaderInit.h"
+#include "ShaderInit.h"
 #include "MoveHandler.h"
-#include "textureManager.h"
+#include "texture_loader.h"
 #include "Camera.h"
 MoveHandler keyHandler;
 void sdlerr(const char* msg)
@@ -45,9 +45,9 @@ int main(int argc, char *argv[])
 	glewExperimental = GL_TRUE;
 	if (glewInit() < 0)
 		printf("ERROR::Unable to initialize GLEW\n");
-	shaderInit gShader;
+	ShaderInit gShader;
 
-	textureManager::genGLTexture("entities", "player")
+	texture_loader::GenerateOGLTexture("entity_map_", "Player")
 
 	while (true)
 	{
@@ -73,9 +73,9 @@ int main(int argc, char *argv[])
 		//view = glm::lookAt(glm::vec3(0.0f, 0.0f, 3.0f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		projection = glm::ortho(0, 800, 600, 0);
 
-		GLint modelLoc = glGetUniformLocation(gShader.theProgram, "model");
-		GLint viewLoc = glGetUniformLocation(gShader.theProgram, "view");
-		GLint projLoc = glGetUniformLocation(gShader.theProgram, "projection");
+		GLint modelLoc = glGetUniformLocation(gShader.m_program, "model");
+		GLint viewLoc = glGetUniformLocation(gShader.m_program, "view");
+		GLint projLoc = glGetUniformLocation(gShader.m_program, "projection");
 
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));

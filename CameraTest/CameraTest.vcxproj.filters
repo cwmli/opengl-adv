@@ -10,19 +10,19 @@
     <ClCompile Include="MoveHandler.cpp">
       <Filter>engine</Filter>
     </ClCompile>
-    <ClCompile Include="shaderInit.cpp">
-      <Filter>engine</Filter>
-    </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>engine</Filter>
     </ClCompile>
-    <ClCompile Include="textureManager.cpp">
-      <Filter>engine</Filter>
-    </ClCompile>
-    <ClCompile Include="entity.cpp">
-      <Filter>engine</Filter>
-    </ClCompile>
     <ClCompile Include="engineInit.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="entityDb.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="texture_loader.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_init.cpp">
       <Filter>engine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -33,19 +33,22 @@
     <ClInclude Include="Camera.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="shaderInit.h">
-      <Filter>engine</Filter>
-    </ClInclude>
     <ClInclude Include="MoveHandler.h">
       <Filter>engine</Filter>
     </ClInclude>
     <ClInclude Include="entityHandler.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="textureManager.h">
+    <ClInclude Include="entBase.h">
       <Filter>engine</Filter>
     </ClInclude>
-    <ClInclude Include="entity.h">
+    <ClInclude Include="entityDb.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="texture_loader.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_init.h">
       <Filter>engine</Filter>
     </ClInclude>
   </ItemGroup>
