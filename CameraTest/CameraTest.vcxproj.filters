@@ -8,22 +8,19 @@
       <Filter>FPS CAMERA</Filter>
     </ClCompile>
     <ClCompile Include="MoveHandler.cpp">
-      <Filter>engine</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
-      <Filter>engine</Filter>
+      <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="engineInit.cpp">
-      <Filter>engine</Filter>
+    <ClCompile Include="src\engine\shader_init.cpp">
+      <Filter>src\engine</Filter>
     </ClCompile>
-    <ClCompile Include="entityDb.cpp">
-      <Filter>engine</Filter>
+    <ClCompile Include="src\engine\texture_loader.cpp">
+      <Filter>src\engine</Filter>
     </ClCompile>
-    <ClCompile Include="texture_loader.cpp">
-      <Filter>engine</Filter>
-    </ClCompile>
-    <ClCompile Include="shader_init.cpp">
-      <Filter>engine</Filter>
+    <ClCompile Include="src\base\entity_db.cpp">
+      <Filter>src\base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -31,25 +28,25 @@
       <Filter>FPS CAMERA</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>engine</Filter>
+      <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="MoveHandler.h">
-      <Filter>engine</Filter>
+      <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="entityHandler.h">
-      <Filter>engine</Filter>
+    <ClInclude Include="src\engine\shader_init.h">
+      <Filter>src\engine</Filter>
     </ClInclude>
-    <ClInclude Include="entBase.h">
-      <Filter>engine</Filter>
+    <ClInclude Include="src\engine\texture_loader.h">
+      <Filter>src\engine</Filter>
     </ClInclude>
-    <ClInclude Include="entityDb.h">
-      <Filter>engine</Filter>
+    <ClInclude Include="src\base\entity_base.h">
+      <Filter>src\base</Filter>
     </ClInclude>
-    <ClInclude Include="texture_loader.h">
-      <Filter>engine</Filter>
+    <ClInclude Include="src\base\entity_db.h">
+      <Filter>src\base</Filter>
     </ClInclude>
-    <ClInclude Include="shader_init.h">
-      <Filter>engine</Filter>
+    <ClInclude Include="src\base\entity_handle.h">
+      <Filter>src\base</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -62,8 +59,14 @@
     <Filter Include="FPS CAMERA">
       <UniqueIdentifier>{d3f2f48c-f36c-4718-9d46-481727d14df2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="engine">
+    <Filter Include="src">
       <UniqueIdentifier>{3251a725-dc51-4f81-bc95-de10363d846a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine">
+      <UniqueIdentifier>{ce3f0cb2-98a5-483d-a3fc-80954cd9b161}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{612b6fd4-be26-4feb-9074-66fd7f5b2563}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

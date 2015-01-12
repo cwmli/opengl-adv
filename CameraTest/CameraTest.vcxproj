@@ -88,25 +88,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="engineInit.cpp" />
-    <ClCompile Include="entityDb.cpp" />
     <ClCompile Include="fpsCamera.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="MoveHandler.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="shader_init.cpp" />
-    <ClCompile Include="texture_loader.cpp" />
+    <ClCompile Include="src\base\entity_db.cpp" />
+    <ClCompile Include="src\engine\shader_init.cpp" />
+    <ClCompile Include="src\engine\texture_loader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="entBase.h" />
-    <ClInclude Include="entityDb.h" />
     <ClInclude Include="Camera.h" />
-    <ClInclude Include="entityHandler.h" />
     <ClInclude Include="MoveHandler.h" />
     <ClInclude Include="fpsCamera.h" />
-    <ClInclude Include="texture_loader.h" />
-    <ClInclude Include="shader_init.h" />
+    <ClInclude Include="src\base\entity_base.h" />
+    <ClInclude Include="src\base\entity_db.h" />
+    <ClInclude Include="src\base\entity_handle.h" />
+    <ClInclude Include="src\engine\shader_init.h" />
+    <ClInclude Include="src\engine\texture_loader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
